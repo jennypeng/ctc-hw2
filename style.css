@@ -85,7 +85,7 @@ img {
   width: 80px;
   position: absolute;
   top: 55px;
-  -webkit-animation-name: spin;
+  /*-webkit-animation-name: spin;*/
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -115,7 +115,7 @@ img {
     -webkit-transform:rotate(0deg);
   }
   to {
-    /* fill me out */
+    -webkit-transform:rotate(360deg);
   }
 }
 
@@ -133,4 +133,5 @@ img {
     height: 100px;
     width: 40px;
     position: absolute;
+
 }

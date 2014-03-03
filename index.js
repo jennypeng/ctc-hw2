@@ -39,24 +39,17 @@ $(document).ready(function(){
 
 
  //QUESTION 5
-  $("#task4").click(function() {
- 	$("#hipcat").find("img").css("-webkit-filter", "blur(5px) sepia(1)");
- });
   $("span.button:contains('Spin')").click(function() {
-  	console.log("efaef")
-  	injectCSS();
   	$(".wheel").css("-webkit-animation-name", "spin");
-  	$(".wheel").css("-webkit-animation-duration", "4000ms");
-  	$(".wheel").css("-webkit-animation-iteration-count", "infinite");
-  	$(".wheel").css("-webkit-animation-timing-function", "linear");
-  	//document.write("<style type = 'text/css'>@keyframes spin {from {transform:rotate(0deg);}to {transform:rotate(360deg);}}</style>");
-  	//document.write("<style type='text/css'>body {background-color:#990000;}</style>");
+  
   });
-  function injectCSS() {
-  	var head = document.getElementsByTagName("head")[0].innerHTML;
-  	var newCSS = head + "<style type = 'text/css'>@keyframes spin {from {transform:rotate(0deg);}to {transform:rotate(360deg);}}</style>";
-  	document.getElementsByTagName("head")[0].innerHTML += newCSS;
-  };
 
  //QUESTION 6
+
+ $(".nyancat").css("left", "0");
+ $("#nyan").css("position", "relative");
+ $(".nyancat").click(function() {
+  $(".nyancat").animate({ "left": "+=1000px"}, "500000");
+  $(".rainbows").animate({ "width": "100%"}, "5000000");
+});
 });
